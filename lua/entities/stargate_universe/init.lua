@@ -461,7 +461,7 @@ end
 function ENT:ActivateGateSound()
     util.PrecacheSound(self.Sounds.Activate)
 	self.ActivateSound = CreateSound(self.Entity,self.Sounds.Activate);
-	self.ActivateSound:ChangePitch(95,0);
+	--self.ActivateSound:ChangePitch(95,0);
 	self.ActivateSound:SetSoundLevel(94);
 	self.ActivateSound:PlayEx(1,97);
 end
@@ -470,7 +470,7 @@ function ENT:StopRollSound()
     util.PrecacheSound(self.Sounds.StopRoll)
     self.StopRollSP = true;
 	self.StopRollS = CreateSound(self.Entity,self.Sounds.StopRoll);
-	self.StopRollS:ChangePitch(95,0);
+	--self.StopRollS:ChangePitch(95,0);
 	self.StopRollS:SetSoundLevel(94);
 	self.StopRollS:PlayEx(1,107);
 end
@@ -488,7 +488,7 @@ function ENT:SpinSound(spin)
     if(spin)then
 	    util.PrecacheSound(self.Sounds.GateRoll)
         self.RollSound = CreateSound(self.Entity,self.Sounds.GateRoll);
-	    self.RollSound:ChangePitch(95,0);
+	    --self.RollSound:ChangePitch(95,0);
 	    self.RollSound:SetSoundLevel(99);
 	    self.RollSound:PlayEx(1,85);
 	    self.StopRollSP = false;
